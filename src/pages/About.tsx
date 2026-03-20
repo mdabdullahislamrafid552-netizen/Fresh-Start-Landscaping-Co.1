@@ -12,7 +12,7 @@ export default function About() {
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
         >
           <p className="text-[10px] font-semibold tracking-[0.3em] uppercase text-gray-400 mb-6">Our Story</p>
-          <h1 className="text-6xl md:text-8xl font-serif text-gray-900 tracking-tighter leading-[0.9] mb-8">
+          <h1 className="text-5xl sm:text-6xl md:text-8xl font-serif text-gray-900 tracking-tighter leading-[0.9] mb-8">
             Rooted in <span className="italic text-gray-400">Passion.</span>
           </h1>
         </motion.div>
@@ -21,7 +21,7 @@ export default function About() {
       {/* Story Section */}
       <section className="pb-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
             
             <motion.div
               initial={{ opacity: 0, y: 40 }}
@@ -45,9 +45,9 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              className="lg:col-span-7 lg:pl-12 pt-12"
+              className="lg:col-span-7 lg:pl-12 pt-4 lg:pt-12"
             >
-              <h2 className="text-8xl md:text-[10rem] font-serif text-[var(--color-primary)] leading-none tracking-tighter mb-8">
+              <h2 className="text-7xl md:text-[10rem] font-serif text-[var(--color-primary)] leading-none tracking-tighter mb-8">
                 20<span className="text-4xl text-gray-300 align-top">+</span>
               </h2>
               <h3 className="text-3xl font-serif text-gray-900 mb-10">Years of Experience</h3>
@@ -72,7 +72,7 @@ export default function About() {
       {/* Minimal CTA */}
       <section className="py-32 bg-white border-t border-black/5 text-center">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-5xl md:text-6xl font-serif text-gray-900 mb-10 tracking-tight">Let's Create Something <span className="italic text-gray-400">Beautiful</span></h2>
+          <h2 className="text-4xl md:text-6xl font-serif text-gray-900 mb-10 tracking-tight">Let's Create Something <span className="italic text-gray-400">Beautiful</span></h2>
           <Link
             to="/free-quote"
             className="inline-block border border-gray-900 text-gray-900 px-12 py-5 text-sm font-semibold tracking-[0.2em] uppercase hover:bg-gray-900 hover:text-white transition-colors duration-500"

@@ -83,7 +83,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="text-6xl md:text-8xl lg:text-[10rem] font-serif text-white mb-8 leading-[0.85] tracking-tighter"
+            className="text-5xl sm:text-6xl md:text-8xl lg:text-[10rem] font-serif text-white mb-8 leading-[0.85] tracking-tighter"
           >
             Fresh <span className="italic text-[var(--color-primary)] font-light">Start</span>
           </motion.h1>
@@ -115,7 +115,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-            className="text-3xl md:text-5xl font-serif text-gray-900 leading-tight mb-10"
+            className="text-4xl md:text-5xl font-serif text-gray-900 leading-tight mb-10"
           >
             We transform ordinary spaces into <span className="italic text-gray-500">extraordinary</span> living environments.
           </motion.h2>
@@ -132,10 +132,10 @@ export default function Home() {
       {/* Services Editorial Grid */}
       <section className="py-24 bg-white border-t border-black/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:mb-20 gap-8">
             <div>
               <p className="text-[10px] font-semibold tracking-[0.3em] uppercase text-gray-400 mb-4">Expertise</p>
-              <h3 className="text-5xl md:text-7xl font-serif text-gray-900 tracking-tight">
+              <h3 className="text-4xl md:text-7xl font-serif text-gray-900 tracking-tight">
                 Our Services
               </h3>
             </div>
@@ -144,7 +144,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-24">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16 md:gap-y-24">
             {services.slice(0, 4).map((service, index) => (
               <motion.div
                 key={service.title}
@@ -162,7 +162,7 @@ export default function Home() {
                     referrerPolicy="no-referrer"
                   />
                 </div>
-                <div className="flex gap-6">
+                <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
                   <div className="text-sm font-serif text-gray-400 pt-2">
                     0{index + 1}
                   </div>
@@ -196,7 +196,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-            className="text-5xl md:text-8xl font-serif text-white mb-12 leading-[1.1] tracking-tight"
+            className="text-4xl md:text-8xl font-serif text-white mb-12 leading-[1.1] tracking-tight"
           >
             Artistry in every <br/>
             <span className="italic font-light text-white/90">blade of grass.</span>
@@ -221,7 +221,7 @@ export default function Home() {
       <section className="py-32 bg-[#081C15] text-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-[10px] font-semibold tracking-[0.3em] uppercase text-[var(--color-primary)] mb-6">Next Steps</p>
-          <h2 className="text-5xl md:text-7xl font-serif text-white mb-12 tracking-tight">Ready for a <span className="italic text-white/70">Fresh Start?</span></h2>
+          <h2 className="text-4xl md:text-7xl font-serif text-white mb-12 tracking-tight">Ready for a <span className="italic text-white/70">Fresh Start?</span></h2>
           <Link
             to="/free-quote"
             className="inline-flex items-center gap-4 bg-white text-[#081C15] px-10 py-5 text-sm font-semibold tracking-[0.2em] uppercase hover:bg-gray-200 transition-colors duration-500"

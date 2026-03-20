@@ -44,7 +44,7 @@ export default function Services() {
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
         >
           <p className="text-[10px] font-semibold tracking-[0.3em] uppercase text-gray-400 mb-6">Expertise</p>
-          <h1 className="text-6xl md:text-8xl font-serif text-gray-900 tracking-tighter leading-[0.9] mb-8">
+          <h1 className="text-5xl sm:text-6xl md:text-8xl font-serif text-gray-900 tracking-tighter leading-[0.9] mb-8">
             Our <span className="italic text-gray-400">Services</span>
           </h1>
           <p className="text-xl text-gray-500 max-w-2xl font-light leading-relaxed">
@@ -64,7 +64,7 @@ export default function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-                className={`flex flex-col lg:flex-row gap-16 items-center ${
+                className={`flex flex-col lg:flex-row gap-8 lg:gap-16 items-center ${
                   index % 2 !== 0 ? 'lg:flex-row-reverse' : ''
                 }`}
               >
@@ -83,7 +83,7 @@ export default function Services() {
                   <div className="text-sm font-serif text-gray-400 border-b border-black/10 pb-4">
                     0{index + 1}
                   </div>
-                  <h2 className="text-5xl font-serif text-gray-900 tracking-tight">{service.title}</h2>
+                  <h2 className="text-4xl md:text-5xl font-serif text-gray-900 tracking-tight">{service.title}</h2>
                   <p className="text-lg text-gray-500 font-light leading-relaxed">
                     {service.description}
                   </p>
@@ -113,7 +113,7 @@ export default function Services() {
       {/* Minimal CTA */}
       <section className="py-32 bg-[#081C15] text-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-5xl md:text-7xl font-serif text-white mb-10 tracking-tight">Transform Your <span className="italic text-white/70">Property</span></h2>
+          <h2 className="text-4xl md:text-7xl font-serif text-white mb-10 tracking-tight">Transform Your <span className="italic text-white/70">Property</span></h2>
           <Link
             to="/free-quote"
             className="inline-block bg-white text-[#081C15] px-12 py-5 text-sm font-semibold tracking-[0.2em] uppercase hover:bg-gray-200 transition-colors duration-500"
